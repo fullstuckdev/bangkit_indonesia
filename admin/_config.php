@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('localhost', 'root', '', 'bangkit_indonesia');
+$con = mysqli_connect('localhost', 'root', '', 'indopmm');
 if (!$con) {
     echo 'Gagal terhubung ke database';
     die;

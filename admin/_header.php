@@ -1,4 +1,5 @@
 <?php include '_config.php'; ?>
+<?php require_once("autentikasi.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,10 +32,13 @@
                     <a class="nav-link" href="page_artikel.php">Artikel</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="page_user.php">Galeri</a>
+                    <a class="nav-link" href="page_gallery.php">Galeri</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="page_user.php">User</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="logout.php">Logout</a>
                 </li>
             </ul>
         </div>
