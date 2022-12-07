@@ -1,6 +1,9 @@
 <?php 
 
 include '_config.php';
+session_start();
+
+if(isset($_SESSION["user"])) header("Location: index.php");
 
 if(isset($_POST['login'])){
 
@@ -21,11 +24,22 @@ if(isset($_POST['login'])){
 
     if($user){
         if($password == $user["password"]){
-            session_start();
             $_SESSION["user"] = $user;
             header("Location: index.php");
+        }else if($password != $user["password"]) { ?>    
+     <script>
+        alert('Password salah!')
+        location.href = 'login.php'
+    </script>
+    <?php
         }
-    }
+    }else if(!$user) { ?>
+    <script>
+        alert('Username tidak ditemukan!')
+        location.href = 'login.php'
+    </script>
+    <?php 
+    } 
 }
 ?>
 
@@ -51,7 +65,7 @@ if(isset($_POST['login'])){
 
             <div class="form-group">
                 <label for="username">Username</label>
-                <input class="form-control" type="text" name="username" placeholder="Username atau email" />
+                <input class="form-control" type="text" name="username" placeholder="Username" />
             </div>
 
 
