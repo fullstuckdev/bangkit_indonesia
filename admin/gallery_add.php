@@ -6,7 +6,7 @@ $gambar = isset($_POST['gambar']);
 $id_user = $_SESSION["user"]["id_user"];
 $keterangan = $_POST['keterangan'];
 
-//upload dan simpan artikel
+//upload dan simpan gallery
 $namafile = $_FILES['gambar']['name'];
 $tmp_name = $_FILES['gambar']['tmp_name'];
 

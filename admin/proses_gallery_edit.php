@@ -8,13 +8,18 @@ $keterangan = $_POST['keterangan'];
 $gambar = $_POST['gambar'];
 $id_user = $_SESSION["user"]["id_user"];
 
-//upload dan simpan artikel
+//upload dan simpan gallery
 $namafile = $_FILES['gambar']['name'];
 $tmp_name = $_FILES['gambar']['tmp_name'];
 
-move_uploaded_file($tmp_name, 'img_artikel/' . $namafile);
+move_uploaded_file($tmp_name, 'img_gallery/' . $namafile);
 
+if($namafile == '') {
+$update = mysqli_query($con, "UPDATE gallery SET id_user='$id_user' , keterangan='$keterangan' WHERE id ='$id'");
+
+}else {
 $update = mysqli_query($con, "UPDATE gallery SET gambar ='$namafile', id_user='$id_user' , keterangan='$keterangan' WHERE id ='$id'");
+}
 
 if ($update) { ?>
     <script>
