@@ -42,7 +42,7 @@
     <header id="header" class="header d-flex align-items-center">
 
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="/bangkit_indonesia" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
                 <h1>Bangkitkan Semangat Indonesia<span>.</span></h1>
@@ -138,7 +138,7 @@
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-info">
-                    <a href="index.html" class="logo d-flex align-items-center">
+                    <a href="/bangkit_indonesia" class="logo d-flex align-items-center">
                         <span>BSI</span>
                     </a>
                     <p>Bangkitkan Semangat Indonesia</p>
