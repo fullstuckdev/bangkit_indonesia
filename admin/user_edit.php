@@ -25,7 +25,7 @@
                     <input type="password" name="password" class="form-control" value="<?= $row['password'] ?>">
                 </div>
                 <div class="form-group">
-                    <button type="button" class="btn btn-danger ">Close</button>
+                    <button type="button" class="btn btn-danger " onclick="window.location.href='/bangkit_indonesia/admin/page_user.php'">Close</button>
                     <button type="submit" name="submit" class="btn btn-primary ">Update</button>
                 </div>
             </form>
